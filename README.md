@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A Next.Js Boilerplate with pre-commits
 
 ## Getting Started
 
-First, run the development server:
+Install the dependencies
 
 ```bash
+# start the development server
+npm i
+```
+
+Run the development server:
+
+```bash
+# start the development server
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### esLint commands
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+# check the project for eslint errors and run the --fix command
+npm run lint
+# fix eslint errors by running prettier
+npm run format
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Basic Frontend Libraries
 
-## Learn More
+|                                                    | Stars                                                                                      | Bundle size | Maintained |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| [next: 10.0.7](https://www.npmjs.com/package/next) | ![GitHub stars](https://img.shields.io/github/stars/vercel/next.js.svg?label=%F0%9F%8C%9F) | N/A         | ✅         |
 
-To learn more about Next.js, take a look at the following resources:
+### Automated Workflow Libraries
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+|                                                                                               | Stars                                                                                          | Bundle size                                                                                                                                                                | Maintained | Dev- Mode |
+| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------- |
+| [prettier: ^2.2.1](https://www.npmjs.com/package/prettier)                                    | ![GitHub stars](https://img.shields.io/github/stars/prettier/prettier.svg?label=%F0%9F%8C%9F)  | [![Bundle size](https://badgen.net/bundlephobia/minzip/prettier/?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=prettier@2.2.1)                                    | ✅         | ✅        |
+| [eslint: ^7.21.0](https://www.npmjs.com/package/eslint)                                       | ![GitHub stars](https://img.shields.io/github/stars/eslint/eslint.svg?label=%F0%9F%8C%9F)      | [![Bundle size](https://badgen.net/bundlephobia/minzip/eslint/?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=eslint@7.21.0)                                       | ✅         | ✅        |
+| [eslint-config-airbnb-base: ^14.2.1](https://www.npmjs.com/package/eslint-config-airbnb-base) | ![GitHub stars](https://img.shields.io/github/stars/airbnb/javascript.svg?label=%F0%9F%8C%9F)  | [![Bundle size](https://badgen.net/bundlephobia/minzip/eslint-config-airbnb-base/?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=eslint-config-airbnb-base@14.2.1) | ⚠️         | ✅        |
+| [husky: ^4.3.4](https://www.npmjs.com/package/husky)                                          | ![GitHub stars](https://img.shields.io/github/stars/typicode/husky.svg?label=%F0%9F%8C%9F)     | [![Bundle size](https://badgen.net/bundlephobia/minzip/husky?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=husky)                                                 | ✅         | ✅        |
+| [lint-staged: ^10.5.4](https://www.npmjs.com/package/lint-staged)                             | ![GitHub stars](https://img.shields.io/github/stars/okonet/lint-staged.svg?label=%F0%9F%8C%9F) | [![Bundle size](https://badgen.net/bundlephobia/minzip/lint-staged?label=%F0%9F%92%BE)](https://bundlephobia.com/result?p=lint-staged@10.5.4)                              | ✅         | ✅        |
