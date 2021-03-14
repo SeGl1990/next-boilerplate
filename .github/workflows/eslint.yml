@@ -1,6 +1,6 @@
-name: Prettier and ESLint Code Base
+name: ESLint Code Base
 
-# Triggers the workflow on push and pull request events
+# Triggers the eslint workflow on push and pull request events
 on: [push, pull_request]
 
 jobs:

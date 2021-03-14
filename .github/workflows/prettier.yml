@@ -1,11 +1,11 @@
-name: Prettier and ESLint Code Base
+name: Prettier Code Base
 
-# Triggers the workflow on push and pull request events
+# Triggers the prettier workflow on push and pull request events
 on: [push, pull_request]
 
 jobs:
-  ESLint:
-    name: ESLint run and fix
+  Prettier:
+    name: Prettier run
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
