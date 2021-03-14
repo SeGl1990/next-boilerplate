@@ -1,4 +1,9 @@
-# A Next.Js Boilerplate with pre-commits
+# A Next.Js Boilerplate
+
+[![ESLint Code Base](https://github.com/SeGl1990/next-boilerplate/actions/workflows/eslint.yml/badge.svg)](https://github.com/SeGl1990/tk-blog/actions/workflows/eslint.yml)
+[![Prettier and ESLint Code Base](https://github.com/SeGl1990/next-boilerplate/actions/workflows/prettier.yml/badge.svg)](https://github.com/SeGl1990/tk-blog/actions/workflows/prettier.yml)
+
+This is a next.js boilerplate with pre-commits and simple github actions.
 
 ## Getting Started
 
@@ -26,6 +31,12 @@ npm run lint
 # fix eslint errors by running prettier
 npm run format
 ```
+
+### Github actions
+
+- In order to follow best practices, very simple github actions have been implemented.
+- We check for EsLint errors (according to our .eslintrs.json rules)
+- We check the code for prettier violations (according to our .prettierrc file)
 
 ### Basic Frontend Libraries
 

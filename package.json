@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint --fix .",
     "format": "prettier ./**/*.{js,jsx,ts,tsx,css,scss,md,json} --config ./.prettierrc --write",
+    "formatmd": "prettier --write",
     "success-message": "echo \n\n\n🚀  Everything is awesome. 🚀\n\n🖥️  Auto checking completed, ready to deploy.🖥️\n\n☁️  Run: git push ☁️"
   },
   "dependencies": {
@@ -38,10 +39,14 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,html}": [
+    "*.{js,jsx,ts,tsx,html}": [
       "npm run lint",
       "npm run format",
       "git add ."
+    ],
+    "*.{md}": [
+      "npm run formatmd",
+      "git add"
     ]
   },
   "commitlint": {
